@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konverter Satuan Panjang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Konverter Satuan Panjang</h1>
+      <form id="converter-form">
+        <div class="form-group">
+          <label for="input-value">Masukkan nilai:</label>
+          <input type="number" id="input-value" required />
+        </div>
+        <div class="form-group">
+          <label for="input-unit">Dari:</label>
+          <select id="input-unit">
+            <option value="mm">Milimeter (mm)</option>
+            <option value="cm">Sentimeter (cm)</option>
+            <option value="dm">Desimeter (dm)</option>
+            <option value="m">Meter (m)</option>
+            <option value="dam">Dekameter (dam)</option>
+            <option value="hm">Hektometer (hm)</option>
+            <option value="km">Kilometer (km)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="output-unit">Ke:</label>
+          <select id="output-unit">
+            <option value="mm">Milimeter (mm)</option>
+            <option value="cm">Sentimeter (cm)</option>
+            <option value="dm">Desimeter (dm)</option>
+            <option value="m">Meter (m)</option>
+            <option value="dam">Dekameter (dam)</option>
+            <option value="hm">Hektometer (hm)</option>
+            <option value="km">Kilometer (km)</option>
+          </select>
+        </div>
+        <button type="submit">Konversi</button>
+      </form>
+      <div id="result">
+        <label>Hasil:</label>
+        <input type="text" id="result-value" readonly />
+      </div>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>
